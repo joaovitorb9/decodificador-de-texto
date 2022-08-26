@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo-principal"
+        src="/imagem/logo-principal.png"
+        alt="Logo da alura com a inicial da letra a"
+      />
+
+      <h1 class="texto-animado">Decodificador de Texto...</h1>
+    </header>
+
+    <main>
+      <section>
+        <textarea
+          class="input-texto"
+          cols="40"
+          rows="6"
+          placeholder="Digite seu texto"
+          autofocus
+        ></textarea>
+        <div id="div-desaparece">
+          <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
+        </div>
+        <div class="botoes">
+          <button class="encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <textarea
+          class="mensagem"
+          placeholder="Resultado aqui!"
+          cols="20"
+          rows="10"
+        ></textarea>
+        <div id="div-aparece">
+          <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer>&copy; Joao Vitor Batista</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
